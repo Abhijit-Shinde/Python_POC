@@ -1,5 +1,17 @@
 # Python_Django_Rest_API
 
+1. To create a virtual environment 
+		$~ python3 -m venv {name_of_environment}
+
+2. To activate the created environment
+		$~ source {name_of_environment}/bin/activate
+    
+3. To run Django server
+		$~ python manage.py runserver
+    
+    If default port i.e 8000 is busy then specify the port as
+      $~ python manage.py runserver {post_number}    Eg: 8001
+
 Default Credentials:
   username:admin
   password:admin
