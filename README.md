@@ -16,7 +16,7 @@
     
 4. If default port i.e 8000 is busy then specify the port as
 
-        > $~ python manage.py runserver {post_number}    Eg: 8001
+      > $~ python manage.py runserver {post_number}    Eg: 8001
 
 #### Default Credentials:
   username:admin
