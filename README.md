@@ -2,7 +2,7 @@
 
 1. To create a virtual environment 
 
-	> $~ python3 -m venv {name_of_environment}
+	> $~ python -m venv {name_of_environment}
 	
 
 2. To activate the created environment
