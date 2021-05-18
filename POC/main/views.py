@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework import generics
 from django.contrib.auth.models import User
 from .models import Category, Product
-from .serializers import RegistrationSerializer, CategorySerializer,ProductSerializer , UserSerializer
+from .serializers import RegistrationSerializer, CategorySerializer,ProductSerializer
 from rest_framework import permissions
 from rest_framework.response import Response
 from rest_framework import status
@@ -47,13 +47,3 @@ class DetailProduct(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = (permissions.IsAuthenticated,)
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
-
-class ListUser(generics.ListCreateAPIView):
-    permission_classes = (permissions.IsAuthenticated,)
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
-
-class DetailUser(generics.RetrieveUpdateDestroyAPIView):
-    permission_classes = (permissions.IsAuthenticated,)
-    queryset = User.objects.all()
-    serializer_class = UserSerializer

@@ -49,15 +49,3 @@ class ProductSerializer(serializers.ModelSerializer):
             'date_created'
         )
         model = Product
-
-class UserSerializer(serializers.ModelSerializer):
-    products = serializers.PrimaryKeyRelatedField(many=True, queryset=Product.objects.all())
-
-    class Meta:
-        model = User
-        fields = (
-            'id',
-            'username',
-            'email',
-            'products',
-        )
